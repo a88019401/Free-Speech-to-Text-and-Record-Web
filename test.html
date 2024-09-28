@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Speech Recognition and Recording</title>
+</head>
+<body>
+    <div class="container">
+        <div class="form-group">
+            <label>最後結果：</label>
+            <textarea id="textBox" rows="10" cols="60"></textarea>
+        </div>
+        
+        <div class="form-group">
+            <label>中間結果：</label>
+            <input id="tempBox" type="text" size="60" value="" />
+        </div>
+        
+        <div class="form-group">
+            <label>辨識語言：</label>
+            <select id="langCombo">
+                <option value="en-US">英文(美國)</option>
+                <option value="cmn-Hant-TW">中文(台灣)</option>
+            </select>
+        </div>
+        
+        <input id="startButton" type="button" value="開始辨識與錄音" /><br />
+        <label id="infoBox"></label><br />
+
+        <a id="downloadLink" style="display: none;">下載錄音</a>
+    </div>
+</body>
+
+<script src="./javascrip.js"></script>
+
+</html>

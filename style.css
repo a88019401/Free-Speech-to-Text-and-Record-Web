@@ -1,0 +1,66 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;  /* 水平置中 */
+    align-items: center;      /* 垂直置中 */
+    height: 100vh;            /* 讓內容區塊充滿整個視窗高度 */
+}
+
+.container {
+    text-align: left;          /* 讓內容居左 */
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    display: flex;
+    align-items: center;       /* 水平對齊標籤和輸入框 */
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    width: 120px;              /* 固定標籤寬度，使其與輸入框對齊 */
+    text-align: right;         /* 讓標籤文字靠右 */
+    margin-right: 10px;
+}
+
+textarea, input[type="text"], select {
+    flex-grow: 1;              /* 讓輸入框填滿剩餘空間 */
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fafafa;
+}
+
+input[type="button"] {
+    background-color: #c8c8a9;
+    color: #333;
+    border: 1px solid #bbb;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+input[type="button"]:hover {
+    background-color: #b5b594;
+}
+
+#infoBox {
+    color: #ff0000;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+#downloadLink {
+    margin-top: 10px;
+    display: inline-block;
+}
